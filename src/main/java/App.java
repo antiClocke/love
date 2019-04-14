@@ -1,5 +1,3 @@
-package com.cyrs.finallove;
-
 import com.cyrs.finallove.Util.MessageUtil;
 import com.cyrs.finallove.Util.TextMessageUtil;
 import org.springframework.boot.SpringApplication;
@@ -25,7 +23,7 @@ public class App {
 
 
     @RequestMapping("/")
-    String home() {
+    public String home() {
         return "Hello World!";
     }
 
