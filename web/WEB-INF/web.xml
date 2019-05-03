@@ -47,19 +47,19 @@
     </servlet-mapping>
 
     <!--在这里配置shiro的filter-->
-<!--    <filter>-->
-<!--        <filter-name>shiroFilter</filter-name>-->
-<!--        <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>-->
-<!--        &lt;!&ndash;设置为true有servler容器控制filter的生命周期&ndash;&gt;-->
-<!--        <init-param>-->
-<!--            <param-name>targetFilterLifecycle</param-name>-->
-<!--            <param-value>true</param-value>-->
-<!--        </init-param>-->
-<!--    </filter>-->
-<!--    <filter-mapping>-->
-<!--        <filter-name>shiroFilter</filter-name>-->
-<!--        <url-pattern>/*</url-pattern>-->
-<!--    </filter-mapping>-->
+    <filter>
+        <filter-name>shiroFilter</filter-name>
+        <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+        <!--设置为true有servler容器控制filter的生命周期-->
+        <init-param>
+            <param-name>targetFilterLifecycle</param-name>
+            <param-value>true</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>shiroFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
 
 
 
